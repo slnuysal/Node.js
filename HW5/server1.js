@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     res.write("<h1>WELCOME COMUNICATION PAGE<h1>");
   } else {
     res.writeHead(404, { "Content-Type": "text/html" });
-    res.write("<h1>404 SAYFA BULUNAMADI<h1>");
+    res.write("<h1>404 PAGE NOT FOUND<h1>");
   }
 
   res.end();
@@ -22,5 +22,5 @@ const server = http.createServer((req, res) => {
 
 const port = 4000;
 server.listen(port, () => {
-  console.log(`Sunucu port ${port} de başlatıldı.`);
+  console.log(`Server port started at ${port} .`);
 });
